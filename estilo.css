@@ -1,0 +1,174 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(120deg, #e0e7ff 0%, #fff 100%);
+    background-image: url("C:/Users/santi/OneDrive/Desktop/PAGINA WEB/animada.jpeg");
+     background-size: cover;       
+            background-position: center;  
+            background-repeat: no-repeat; 
+            color: black;     
+}
+nav {
+    position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 30px;          /* Altura fija */
+      background-color: #27B0F5;
+      color: white;
+      display: flex;          /* Activamos Flexbox */
+      align-items: center;    /* Centrado vertical */
+      justify-content: right; /* Centrado horizontal */
+      box-sizing: border-box;
+      z-index: 1000;
+}
+table{
+    margin: 80px auto 0 auto;    
+      border-collapse: collapse;
+}
+td{
+
+    background: rgba(255, 255, 255, 0.7);;
+   height: 20px;
+   width: 750px;
+   
+}
+nav .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+    color: #fff;
+    font-size: 1.4rem;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 24px;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+nav ul li a:hover {
+    color: #c7d2fe;
+}
+h1 {
+    font-size: 4em;     
+    color: white; -webkit-text-stroke: 1px black;    
+    text-align: center; 
+     text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+     font-family: Impact, sans-serif;
+}
+
+h2 {
+    font-family: 'Pacifico', cursive;
+    font-size: 2em;
+    color: white; -webkit-text-stroke: 1px #000080;
+    text-shadow: 3px 3px 8px rgba(0,0,0,0.7);
+    text-align: center;
+}
+section {
+    margin-bottom: 28px;
+}
+.galeria {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+.galeria img {
+    width: 31%;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(99,102,241,0.11);
+    object-fit: cover;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 16px;
+    margin-top: 8px;
+}
+form input, form textarea {
+    padding: 10px 12px;
+    border: 1px solid #a5b4fc;
+    border-radius: 6px;
+    font-size: 1rem;
+    outline: none;
+    background: #f1f5fd;
+    resize: vertical;
+}
+form button {
+    background: #6366f1;
+    color: #fff;
+    border: none;
+    padding: 10px 0;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+    font-weight: bold;
+}
+form button:hover {
+    background: #4338ca;
+}
+.mapa {
+    margin-top: 14px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 1px 6px rgba(55,48,163,0.10);
+}
+footer {
+    position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    background: #27B0F5;
+    color: white;
+    text-align: center;
+    padding:  0;
+    margin-top: 20px;
+    font-size: 0.70rem;
+    border-radius: 12px 12px 0 0;
+}
+@media (max-width: 850px) {
+    .container {
+        padding: 16px 2vw 16px 2vw;
+        max-width: 97vw;
+    }
+    .header-banner img {
+        height: 140px;
+    }
+    .galeria img {
+        width: 48%;
+    }
+}
+@media (max-width: 570px) {
+    nav {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px 6px;
+    }
+    nav ul {
+        gap: 8px;
+    }
+    .header-banner img {
+        height: 90px;
+    }
+    .banner-text {
+        font-size: 0.85rem;
+    }
+    .galeria {
+        flex-direction: column;
+        gap: 8px;
+    }
+    .galeria img {
+        width: 100%;
+    }
+}

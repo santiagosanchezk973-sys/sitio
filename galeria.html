@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Galería</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #4ec0ed;
+background: radial-gradient(circle,rgba(78, 192, 237, 1) 0%, rgba(111, 237, 225, 1) 50%, rgba(83, 186, 237, 1) 100%);
+      margin: 0;
+      padding: 20px;
+      color: #333;
+    }
+    h1 {
+      text-align: center;
+      color: #1f5b8e;
+      margin-bottom: 20px;
+    }
+    .gallery {
+      max-width: 1000px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      transition: transform 0.3s;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    footer {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 0.9em;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Galería De Actividades</h1>
+
+  <div class="gallery">
+    
+    <img src="C:\Users\santi\OneDrive\Desktop\PAGINA WEB\comunion2.jpeg" alt="comuniones">
+    <img src="C:\Users\santi\OneDrive\Desktop\PAGINA WEB\procesión.jpeg" alt="procesiones">
+    <img src="C:\Users\santi\OneDrive\Desktop\PAGINA WEB\diciembre.jpeg" alt="posadas">
+    <img src="C:\Users\santi\OneDrive\Desktop\PAGINA WEB\fiesta.jpeg" alt="julio">
+     <img src="C:\Users\santi\OneDrive\Desktop\PAGINA WEB\confirmacion (1).jpeg" alt="confirmaciones">
+    <img src="C:\Users\santi\OneDrive\Desktop\PAGINA WEB\catequesis.jpeg" alt="catequesis">
+    <img src="C:\Users\santi\OneDrive\Desktop\PAGINA WEB\comunion.jpeg" alt="comuniones2">
+  </div>
+<a href="index.html" class="btn-regresar">Inicio</a>
+</body>
+</html>
